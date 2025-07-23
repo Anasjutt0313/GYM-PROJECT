@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Gym</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <style>
+         
+         .navbar-brand img {
+            height: 50px;          
+            width: auto;
+        }
+        
+        .overlay {
+            height: 100vh;
+            background-image: url(images/f2.webp);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .overlay-text {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .class-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .see-all-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navbar-brand img {
+            height: 50px; 
+        }
+
+        .social-icons img {
+            height: 30px; 
+            width: auto;
+        }
+        .zoom {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .zoom-img {
+        transition: transform 0.3s ease;
+    }
+
+    .zoom:hover .zoom-img {
+        transform: scale(1.1);
+    }
+   
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-end px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Gold-Gym-Fitness-Institute-Logo-PNG.png" alt="International Gym Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary" href="contact.html">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid overlay">
+        <div class="row">
+            <div class="col d-flex align-items-center justify-content-center" style="height: 100vh;">
+                <div class="text-center">
+                    <h1 class="overlay-text">"Where fitness is life."</h1>
+                    <p class="overlay-text">Welcome to the neighborhood's toughest gym.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Classes offered section -->
+    <section class="black-image-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-3">Classes Offered</h2>
+                    <p class="lead">We offer a variety of fitness classes tailored to your needs. From strength training to yoga, find the perfect fit for your fitness journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image grid section -->
+<section class="image-grid bg-dark py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="zoom">
+                        <img src="images/picture.jpg" class="card-img-top zoom-img" alt="Pull Your Weight">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gymnastics</h5>
+                        <p class="card-text">M & Th, 12pm - 12:45pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="zoom">
+                        <img src="images/pic2.jpg" class="card-img-top zoom-img" alt="Cardio Circuit">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cardio Circuit</h5>
+                        <p class="card-text">T & Th, 5pm - 6pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="zoom">
+                        <img src="images/pic3.jpg" class="card-img-top zoom-img" alt="Gymnastics">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Gymnastics</h5>
+                        <p class="card-text">Sa, 11am - 12pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card bg-dark text-white">
+                    <div class="zoom">
+                        <img src="images/pic4.jpg" class="card-img-top zoom-img" alt="Powerlifting">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Powerlifting</h5>
+                        <p class="card-text">M & W, 9am - 10am</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- See All Classes button section -->
+    <section class="see-all-classes-button bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <a href="classes.html" class="btn btn-lg btn-primary">See All Classes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Gym section -->
+    <section class="about-gym-section bg-white text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-3">About the Gym</h2>
+                    <p class="lead">We offer an unpretentious and results-oriented community that’s invested in your goals and success. Check your ego at the door and get ready to sweat!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section class="join-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="display-5">Living</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" class="text-white"><img src="images/insta.png" alt="Instagram" class="img-fluid"></a>
+                        <a href="https://www.facebook.com/" class="text-white"><img src="images/facebook.jpg" alt="Facebook" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <p class="open-hours">Open daily</p>
+                    <p>7am – 8pm Monday thru Friday</p>
+                    <p>9am – 3pm Weekends</p>
+                    <p><br> 123 Nameless Street Houston, TX 00000</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <a href="join.html" class="btn btn-lg btn-primary">Join Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

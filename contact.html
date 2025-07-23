@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/my.css">
+    <style>
+         .navbar-brand img {
+            max-height: 50px; /* Adjust the maximum height as needed */
+            width: auto;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .navbar-nav .nav-item .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: transparent;
+            transition: background-color 0.3s, width 0.3s;
+        }
+
+        .navbar-nav .nav-item .nav-link.active::after {
+            background-color: #ffffff; /* Change to your preferred underline color */
+            width: 100%;
+        }
+        /* Custom CSS for specific adjustments */
+        .social-icons img {
+            width: 30px; /* Adjust size of social icons */
+            height: auto;
+        }
+        .join-section .col-md-4 {
+            background-color: #fff; /* Set default background color */
+        }
+        .join-section .col-md-4:last-child {
+            background-color: #000; /* Set black background color for last div */
+            color: #fff; /* Set text color to white */
+            padding: 20px; /* Add padding for better spacing */
+            border-radius: 8px; /* Add border-radius for rounded corners */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-end px-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/Gold-Gym-Fitness-Institute-Logo-PNG.png" alt="International Gym Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active btn btn-primary" href="contact.html">Join Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    </nav>
+
+    <section class="contact-section mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2>Contact Us</h2>
+                    <p>Please feel free to contact us with any questions.</p>
+                    <div class="contact-info bg-dark text-white p-4 rounded">
+                        <p><strong>Phone</strong><br>(555) 555-5555</p>
+                        <p><strong>E-mail</strong><br>email@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-form bg-dark text-white p-4 rounded">
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-section bg-light mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3>Living</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.jpg" alt="Facebook"></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <p class="open-hours">Open daily</p>
+                    <p>7am – 8pm Monday thru Friday</p>
+                    <p>9am – 3pm Weekends</p>
+                    <p>123 Nameless Street, Houston, TX 00000</p>
+                </div>
+                <div class="col-md-4 mb-4 d-flex align-items-center justify-content-center bg-dark">
+                    <a href="join.html" class="btn btn-lg btn-primary">Join Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle (Bootstrap JS and Popper JS) -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/my.js"></script>
+</body>
+</html>
